@@ -54,7 +54,7 @@ export const transformImportStyle = (
           )
         } else {
           styleImports.push(
-            `import '${lib}/${formatMap[format]}/packages/omponents/${hyphenate(
+            `import '${lib}/${formatMap[format]}/packages/components/${hyphenate(
               component
             )}/style/css'`
           )
