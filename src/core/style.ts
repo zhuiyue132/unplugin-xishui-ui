@@ -48,13 +48,13 @@ export const transformImportStyle = (
         const component = trimmed.slice(prefix.length)
         if (useSource) {
           styleImports.push(
-            `import '${lib}/${
-              formatMap[format]
-            }/packages/components/${hyphenate(component)}/style/index'`
+            `import '${lib}/${formatMap[format]}/components/${hyphenate(
+              component
+            )}/style/index'`
           )
         } else {
           styleImports.push(
-            `import '${lib}/${formatMap[format]}/packages/omponents/${hyphenate(
+            `import '${lib}/${formatMap[format]}/components/${hyphenate(
               component
             )}/style/css'`
           )
